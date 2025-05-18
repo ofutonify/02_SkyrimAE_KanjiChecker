@@ -102,14 +102,4 @@ if uploaded_file:
 else:
     st.markdown('<div class="resultbox">ここに結果が表示されます</div>', unsafe_allow_html=True)
 
-# --- 一番下 ---
-st.markdown(
-    '''
-    <div style="margin:20px auto;">
-      <a href="https://note.com/your-kanji-check-article" target="_blank">
-        <img src="icon.png" width="36" style="border-radius:50%; box-shadow:0 2px 8px #0003;">
-      </a>
-    </div>
-    ''',
-    unsafe_allow_html=True
 )
