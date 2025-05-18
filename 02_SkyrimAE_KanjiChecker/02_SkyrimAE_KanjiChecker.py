@@ -31,11 +31,19 @@ st.markdown("""
 
 st.markdown("## 02 SkyrimAE KanjiChecker")
 st.markdown("### 漢字・記号チェッカー")
-st.write("読み込んだ.xml、.ini、.txtにSkyrimAEバニラで表示されない文字・漢字・記号があるかチェックするツールです")
+st.markdown(
+    "読み込んだ.xml、.ini、.txtに\nSkyrimAEバニラで表示されない<br>文字・漢字・記号があるかチェックするツールです"
+    "<br>※ファイル1つにつき1回チェックできます",
+    unsafe_allow_html=True
+)
 
-# --- ファイルアップロード ---
+st.markdown(
+    '<div style="text-align:center;">1回につき1つのファイルがチェック可能</div>',
+    unsafe_allow_html=True
+)
+
 uploaded_file = st.file_uploader(
-    "ここにファイルをドロップ\n1回につき1つのファイルがチェック可能",
+    "▼ここにファイルをドロップ",
     type=["xml", "txt", "ini"],
     key="kanji_file"
 )
