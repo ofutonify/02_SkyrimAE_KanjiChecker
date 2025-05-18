@@ -29,13 +29,8 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown(
-    '''
-    <h1 style="margin-bottom:10px;">02 SkyrimAE KanjiChecker</h1>
-    <h2 style="margin-top:0px; margin-bottom:18px;">漢字・記号チェッカー</h2>
-    ''',
-    unsafe_allow_html=True
-)
+st.title("02 SkyrimAE KanjiChecker")
+st.header("漢字・記号チェッカー")
 st.markdown(
     "読み込んだ.xml、.ini、.txtに\nSkyrimAEバニラで表示されない<br>文字・漢字・記号があるかチェックするツールです"
     "<br>※ファイル1つにつき1回チェックできます<br>",
