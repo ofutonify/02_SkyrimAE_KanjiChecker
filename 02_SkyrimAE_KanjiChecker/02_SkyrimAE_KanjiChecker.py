@@ -1,15 +1,16 @@
-﻿import streamlit as st
+import streamlit as st
 from lxml import etree
 from collections import defaultdict
 import tempfile
 import os
 
-# --- フォントリスト読込 ---
-with open("SkyrimAE_JP_BookFont.txt", encoding="utf-8") as f:
+# --- フォントリスト読込（実行ファイルのある場所基準にする） ---
+base_dir = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(base_dir, "SkyrimAE_JP_BookFont.txt"), encoding="utf-8") as f:
     book = set(f.read())
-with open("SkyrimAE_JP_EveryFont.txt", encoding="utf-8") as f:
+with open(os.path.join(base_dir, "SkyrimAE_JP_EveryFont.txt"), encoding="utf-8") as f:
     every = set(f.read())
-with open("SkyrimAE_JP_HandWriteFont.txt", encoding="utf-8") as f:
+with open(os.path.join(base_dir, "SkyrimAE_JP_HandWriteFont.txt"), encoding="utf-8") as f:
     hand = set(f.read())
 
 # --- CSS（デザイン・ダークモード・中央揃え・角丸・メイリオ）---
