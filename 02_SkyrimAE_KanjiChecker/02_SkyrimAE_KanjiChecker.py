@@ -101,5 +101,3 @@ if uploaded_file:
         st.markdown('<div class="resultbox">ここに結果が表示されます</div>', unsafe_allow_html=True)
 else:
     st.markdown('<div class="resultbox">ここに結果が表示されます</div>', unsafe_allow_html=True)
-
-)
