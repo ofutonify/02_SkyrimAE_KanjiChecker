@@ -102,7 +102,7 @@ if uploaded_file:
 else:
     st.markdown('<div class="resultbox">ここに結果が表示されます</div>', unsafe_allow_html=True)
 
-# --- note記事リンク例 ---
+# --- 一番下 ---
 st.markdown(
     '''
     <div style="margin:20px auto;">
