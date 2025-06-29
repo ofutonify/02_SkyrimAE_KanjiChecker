@@ -4,6 +4,12 @@ from collections import defaultdict
 import tempfile
 import os
 
+# ページ設定
+st.set_page_config(
+    page_title="02_AE_KanjiChecker",
+    page_icon="🔍"
+)
+
 # --- フォントリスト読込（実行ファイルのある場所基準にする） ---
 base_dir = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(base_dir, "SkyrimAE_JP_BookFont.txt"), encoding="utf-8") as f:
